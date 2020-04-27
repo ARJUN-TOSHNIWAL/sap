@@ -1,0 +1,10 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns:ui="sap.ui.table">
+	<Dialog title="ML Introduction" resizable="true">
+		<Text text="Machine learning was coined in 1959 by Arthur Samuel"/>
+		<Text text="Tom M. Mitchell- A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P if its performance at tasks in T, as measured by P, improves with experience E"/>
+		
+		<buttons>
+			<Button text="OK" class="zep_blueButton" press="handleAddEntryOkPress"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

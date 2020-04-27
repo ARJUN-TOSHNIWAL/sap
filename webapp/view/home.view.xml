@@ -1,0 +1,13 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.demo.demo_py_lazy.controller.home"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:u="sap.ui.unified" xmlns:ui="sap.ui.table">
+	
+			<Page title="Title" busy="{oViewModel>/busy}" busyIndicatorDelay="0">
+				<content>
+					<u:FileUploader id="fileUploader" name="csv_file" uploadUrl="http://127.0.0.1:5000/" tooltip="Upload your file to the local server"
+						uploadComplete="handleUploadComplete" sendXHR="true" change="onFileUploadChange"/>
+					<Button text="Upload File" press="handleUploadPress"/>
+					<IconTabBar id="idWorkBookTabs"  select="onIconTabBarSelect" showOverflowSelectList="true" expandable="false"/>
+				</content>
+			</Page>
+	
+</mvc:View>
